@@ -1,0 +1,317 @@
+/* ===========================
+   GLOBAL RESET + BASE STYLES
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #111;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 60px;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 130px;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* ===========================
+   HERO SECTION (Get Schooled)
+=========================== */
+
+main section:first-of-type {
+    background-image: url("/mnt/data/Screenshot 2025-11-23 004630.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    padding-top: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* Dark gradient overlay */
+    position: relative;
+}
+
+main section:first-of-type::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.8)
+    );
+}
+
+/* Content stays above overlay */
+main section:first-of-type > div {
+    position: relative;
+    z-index: 2;
+}
+
+main section:first-of-type h1 {
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+main section:first-of-type span {
+    margin: 0 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+main section:first-of-type button {
+    margin-top: 30px;
+    padding: 18px 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(135deg, #b650ff, #ff70c6);
+    color: white;
+    cursor: pointer;
+}
+
+/* ===========================
+   PROFESSIONALS SECTION
+=========================== */
+main section:first-of-type h2 {
+    font-size: 30px;
+    margin-top: 90px;
+}
+
+main section:first-of-type h2 span {
+    color: #b650ff;
+}
+
+main section:first-of-type > div:last-child {
+    margin-top: 50px;
+    display: flex;
+    gap: 60px;
+}
+
+main section:first-of-type > div:last-child div {
+    text-align: center;
+}
+
+main section:first-of-type img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+main section:first-of-type h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+main section:first-of-type p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* ===========================
+   SECOND SECTION (QUOTE)
+=========================== */
+main section:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    background-color: #222;
+    gap: 40px;
+}
+
+main section:nth-of-type(2) img {
+    width: 250px;
+}
+
+main section:nth-of-type(2) blockquote {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+main section:nth-of-type(2) h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* ===========================
+   POPULAR TUTORIALS GRID
+=========================== */
+main section:nth-of-type(3) {
+    padding: 80px;
+    background-color: #111;
+}
+
+main section:nth-of-type(3) h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+main section:nth-of-type(3) > div {
+    background-color: #222;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+}
+
+main section:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+main section:nth-of-type(3) img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+main section:nth-of-type(3) h3 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+main section:nth-of-type(3) p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+main section:nth-of-type(3) i {
+    color: #b650ff;
+}
+
+/* ===========================
+   FREE MEMBERSHIP SECTION
+=========================== */
+main section:nth-of-type(4) {
+    padding: 80px;
+    text-align: center;
+    background-color: #181818;
+}
+
+main section:nth-of-type(4) h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+main section:nth-of-type(4) > div {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    margin: 20px;
+}
+
+main section:nth-of-type(4) img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+main section:nth-of-type(4) h3 {
+    margin-bottom: 10px;
+}
+
+main section:nth-of-type(4) button {
+    margin-top: 40px;
+    padding: 18px 40px;
+    background: linear-gradient(135deg, #b650ff, #ff70c6);
+    border: none;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ===========================
+   FAQ SECTION
+=========================== */
+main section:nth-of-type(5) {
+    padding: 80px;
+    background-color: #111;
+}
+
+main section:nth-of-type(5) h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+main section:nth-of-type(5) > div {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+main section:nth-of-type(5) h3 {
+    margin-bottom: 15px;
+}
+
+main section:nth-of-type(5) p,
+main section:nth-of-type(5) div {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    padding: 50px;
+    background-color: #000;
+    text-align: center;
+}
+
+footer img {
+    width: 120px;
+}
+
+footer div i {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #b650ff;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
