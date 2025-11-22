@@ -1,0 +1,75 @@
+/* ===========================
+   FLEXBOX LAYOUT STRUCTURE
+   =========================== */
+
+/* Body contains: header, main, footer
+   → stacked vertically (column) */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main contains: article + aside
+   → positioned horizontally (row) */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Let main stretch automatically */
+}
+
+/* Article takes 2/3 width */
+article {
+    flex: 2;
+    padding: 20px;
+    overflow-y: auto; /* Scroll vertically if content is long */
+}
+
+/* Aside takes 1/3 width */
+aside {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Scroll vertically */
+    background-color: #f3f3f3;
+}
+
+/* ===========================
+   HEADER + FOOTER BASIC STYLE
+   =========================== */
+
+header {
+    background: #222;
+    color: white;
+    padding: 10px 20px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ===========================
+   GENERAL PAGE CLEANING
+   =========================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
