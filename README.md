@@ -99,6 +99,4 @@ These improvements come from the CSS rules in `base.css`.
 
 Project completed by **Okoth Emmanuel** as part of the ALX Front-End Web Development course.
 
----
 
-If you want, I can also generate a **README badge**, **table of contents**, or a more advanced version.
